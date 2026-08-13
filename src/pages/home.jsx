@@ -15,6 +15,10 @@ import reactLogo from '../assets/tech/React.png';
 import renderLogo from '../assets/tech/Render.png';
 import vercelLogo from '../assets/tech/Vercel.png';
 import Marquee from '../components/marque.jsx';
+import aeonix from '../assets/projects/aeonix-page.png'
+import codeodyssey from '../assets/projects/codeodyssey-pro.png'
+import motogears from '../assets/projects/motogears-app.png'
+import ProjectCard from '../components/projectCard.jsx'
 
 const techStack = [
   { label: 'Dart', source: dartLogo },
@@ -167,11 +171,79 @@ function Home() {
                 </div>
               </button>
             </div>
+          </div>
         </div>
 
-</div>
-
       <Marquee items={techStack} speed={18} />
+
+      
+        {/* PROJECTS */}
+        <div className="p-[clamp(1rem,2vw,2rem)] mt-12 max-sm:mt-8 max-w-7xl mx-auto">
+
+          <div className="flex max-sm:flex-col gap-[clamp(1.5rem,3vw,3rem)]">
+
+            {/* LEFT COLUMN */}
+            <div className="flex flex-col gap-[clamp(1.5rem,3vw,3rem)] flex-1">
+
+              {/* Aeonix Card */}
+              <ProjectCard
+                image={aeonix}
+                title="Aeonix Timepieces Website"
+                description="Create for customer easy to shop watches"
+                tag="Fullstack Web Development"
+              />
+
+              {/* Motogears Card */}
+              <ProjectCard
+                image={motogears}
+                title="MOTOGEARS MOBILE APPLICATION"
+                description="A e-commerce app for motorcycle gears"
+                tag="Mobile Development"
+              />
+               <p className="text-white font-bold text-[clamp(1.2rem,2.2vw,4rem)] mt-3 leading-tight font-agdasima">
+                  Systems built to solve a specific operating problem, not portfolio.
+                </p>
+                <button type="button" className="button font-semibold text-[clamp(0.4rem,1vw,1.25rem)] w-[clamp(9rem,14vw,18rem)] z-21 font-montserrat max-sm:hidden">
+                <span>See all my works</span>
+                <div className="flex h-11 w-12 items-center rounded-full bg-white p-1 ">
+                  <img src={arrowUp} alt="Arrow Up" className="h-[clamp(1rem,11vw,13rem)] w-12 object-contain" />
+                </div>
+              </button>
+            </div>
+
+            {/* RIGHT COLUMN */}
+            <div className="flex flex-col gap-[clamp(1.5rem,3vw,3rem)] flex-1">
+
+              {/* Header */}
+              <div>
+                <div className="flex items-center gap-2 shrink-0 pt-1">
+                  <span className="text-blue-600 text-lg leading-none">◆</span>
+                  <p className="text-white text-[clamp(0.8rem,1vw,1rem)] font-semibold whitespace-nowrap font-montserrat">
+                    Some recent projects
+                  </p>
+                  <div className="h-px w-16 bg-white/30" />
+                </div>
+                <p className="text-white font-bold text-[clamp(1.2rem,2.2vw,4rem)] mt-3 leading-tight font-agdasima">
+                  Systems built to solve a specific operating problem, not portfolio.
+                </p>
+                
+              </div>
+
+              {/* CodeOdyssey Card */}
+              <ProjectCard
+                image={codeodyssey}
+                title="CodeOdyssey"
+                description="An interactive platform for programming education with real-time optimization and feedback"
+                tag="Backend Developer"
+              />
+
+              {/* Placeholder / next card */}
+              <div className="bg-neutral-200 rounded-xl w-full aspect-[4/3]" />
+
+            </div>
+
+          </div>
+        </div>
 
     </>
 
