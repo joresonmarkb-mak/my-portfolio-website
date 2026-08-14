@@ -244,6 +244,148 @@ function Home() {
 
           </div>
         </div>
+        {/* My Services */}
+        
+         <div className="p-[clamp(1rem,2vw,2rem)] mt-12 max-sm:mt-8 col-span-2 flex items-start gap-[clamp(1rem,8vw,10rem)] max-w-7xl mx-auto">
+        
+        {/* Left label column */}
+        <div className=''>
+          <div className="flex items-center gap-2 shrink-0 pt-1">
+            <span className="text-blue-600 text-lg leading-none">◆</span>
+            <p className="text-white text-[clamp(0.8rem,1vw,1rem)] font-semibold whitespace-nowrap">
+              01
+            </p>
+            
+            <div className="h-px w-70 bg-white/30" />
+          </div>
+          <div className="flex items-center gap-2 shrink-0 pt-1 mt-70">
+              <span className="text-blue-600 text-lg leading-none">◆</span>
+              <p className="text-white text-[clamp(0.8rem,1vw,1rem)] font-semibold whitespace-nowrap">
+                02
+              </p>
+              
+              <div className="h-px w-70 bg-white/30" />
+          </div>
+          <div className="flex items-center gap-2 shrink-0 pt-1 mt-70">
+              <span className="text-blue-600 text-lg leading-none">◆</span>
+              <p className="text-white text-[clamp(0.8rem,1vw,1rem)] font-semibold whitespace-nowrap">
+                03
+              </p>
+              
+              <div className="h-px w-70 bg-white/30" />
+          </div>
+        </div>
+
+        {/* Right content column, pushed further right */}
+        <div className="ml-[clamp(1rem,6vw,8rem)] text-justify">
+
+          <p className="text-white text-[clamp(0.9rem,6vw,7rem)] font-semibold font-agdasima">
+            Web Development
+          </p>
+          <p className="text-white text-[clamp(0.9rem,2vw,3rem)]  font-agdasima">
+            Systems and websites built around how your business runs.
+          </p>
+          <div className="emblem">Plan</div>
+          <div className="emblem">Build</div>
+          <div className="emblem">Test</div>
+          <div className="emblem">Launch</div>
+          <div className="emblem">Support</div>
+
+          <div className="h-px w-200 bg-white/30" />
+          <p className="text-white text-[clamp(0.9rem,6vw,7rem)] font-semibold font-agdasima mt-8">
+            Mobile Development
+          </p>
+          <p className="text-white text-[clamp(0.9rem,2vw,3rem)]  font-agdasima">
+            Turning ideas into apps people actually use.
+          </p>
+          <div className="emblem">Plan</div>
+          <div className="emblem">Build</div>
+          <div className="emblem">Test</div>
+          <div className="emblem">Launch</div>
+          <div className="emblem">Support</div>
+
+          <div className="h-px w-200 bg-white/30" />
+          <p className="text-white text-[clamp(0.9rem,6vw,7rem)] font-semibold font-agdasima mt-8">
+            E-Commerce Store
+          </p>
+          <p className="text-white text-[clamp(0.9rem,2vw,3rem)]  font-agdasima">
+            A storefront that makes it easy for customers to browse, order, and pay 
+            — so your business is never limited to foot traffic or store hours.
+          </p>
+          <div className="emblem">Plan</div>
+          <div className="emblem">Build</div>
+          <div className="emblem">Test</div>
+          <div className="emblem">Launch</div>
+          <div className="emblem">Support</div>
+
+          <div className="h-px w-200 bg-white/30" />
+        </div>
+        </div>
+              {/* ABOUT ME */}
+      <div className="p-[clamp(1rem,2vw,2rem)] mt-12 max-sm:mt-8 col-span-2 flex items-start gap-[clamp(1rem,8vw,10rem)] max-w-7xl mx-auto">
+        
+        {/* Left label column */}
+        <div>
+          <div className="flex items-center gap-2 shrink-0 pt-1">
+            <span className="text-blue-600 text-lg leading-none">◆</span>
+            <p className="text-white text-[clamp(0.8rem,1vw,1rem)] font-semibold whitespace-nowrap">
+              Testimonial
+            </p>
+            <div className="h-px w-16 bg-white/30" />
+          </div>
+          <p className='text-white'>Trusted by Clients</p>
+         </div>
+        {/* Right content column, pushed further right */}
+        <div className="ml-[clamp(1rem,6vw,8rem)] text-justify">
+           <div className="flex items-center">
+              <div className="flex -space-x-3">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <div
+                    key={i}
+                    className="rounded-full bg-gray-500 border-2 border-black w-[clamp(1.5rem,3vw,2.5rem)] h-[clamp(1.5rem,3vw,2.5rem)]"
+                  />
+                ))}
+              </div>
+              <div className="bg-white rounded-full flex items-center justify-center ml-2 w-[clamp(1.5rem,3vw,2.5rem)] h-[clamp(1.5rem,3vw,2.5rem)]">
+                <span className="text-black text-[clamp(0.75rem,1.5vw,1.1rem)]">↗</span>
+              </div>
+            </div>
+
+              {/* Text */}
+              <div className="text-white text-[clamp(0.6rem,1.1vw,2.8rem)] leading-snug mt-2 ">
+                <span className="font-semibold">99.6% of My Client are Satisfied</span>
+                <br />
+                -Be One Of Them Today.
+              </div>
+
+              {/* Buttons */}
+              <div className="flex items-center space-x-2 mt-3 text-[clamp(0.55rem,1vw,1.25rem)] z-22 ">
+                <button
+                  type="button"
+                  className="bg-white text-black rounded-full font-semibold px-[clamp(0.5rem,1.2vw,1.2rem)] py-[clamp(0.25rem,0.6vw,1.2rem)]"
+                >
+                  Free Consultation
+                </button>
+                <button
+                  type="button"
+                  className="border border-white/40 text-white rounded-full px-[clamp(0.5rem,1.2vw,1.2rem)] py-[clamp(0.25rem,0.6vw,1.2rem)]"
+                >
+                  24h Response
+                </button>
+              </div>
+
+            </div>
+                        
+             </div>
+
+         <div className="col-span-2 mt-6 flex items-center space-x-4 max-sm:justify-center">
+              
+            </div>
+         
+      
+
+          
+        
 
     </>
 
