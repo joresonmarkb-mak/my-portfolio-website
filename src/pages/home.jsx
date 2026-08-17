@@ -19,6 +19,7 @@ import aeonix from '../assets/projects/aeonix-page.png'
 import codeodyssey from '../assets/projects/codeodyssey-pro.png'
 import motogears from '../assets/projects/motogears-app.png'
 import ProjectCard from '../components/projectCard.jsx'
+import ClientFeedbackCard from '../components/clientFeedbackCard.jsx';
 
 const techStack = [
   { label: 'Dart', source: dartLogo },
@@ -321,71 +322,63 @@ function Home() {
           <div className="h-px w-200 bg-white/30" />
         </div>
         </div>
-              {/* ABOUT ME */}
-      <div className="p-[clamp(1rem,2vw,2rem)] mt-12 max-sm:mt-8 col-span-2 flex items-start gap-[clamp(1rem,8vw,10rem)] max-w-7xl mx-auto">
-        
-        {/* Left label column */}
-        <div>
-          <div className="flex items-center gap-2 shrink-0 pt-1">
-            <span className="text-blue-600 text-lg leading-none">◆</span>
-            <p className="text-white text-[clamp(0.8rem,1vw,1rem)] font-semibold whitespace-nowrap">
-              Testimonial
-            </p>
-            <div className="h-px w-16 bg-white/30" />
+        {/* TESTIMONIALS */}
+        <div className="p-[clamp(1rem,2vw,2rem)] mt-12 max-sm:mt-8 max-w-7xl mx-auto">
+
+          <div className="flex max-sm:flex-col gap-[clamp(1.5rem,3vw,3rem)]">
+
+            {/* LEFT: Section label + heading */}
+            <div className="shrink-0 w-[clamp(10rem,15vw,14rem)]">
+              <div className="flex items-center gap-2">
+                <span className="text-blue-600 text-lg leading-none">◆</span>
+                <p className="text-white text-[clamp(0.8rem,1vw,1rem)] font-semibold font-montserrat">
+                  Testimonials
+                </p>
+                <div className="h-px w-70 bg-white/30" />
+              </div>
+              <p className="text-white font-bold text-[clamp(1.4rem,2.2vw,2rem)] mt-3 leading-tight font-agdasima">
+                Trusted by Clients
+              </p>
+            </div>
+
+            {/* RIGHT: Swipeable cards */}
+            <div className="flex gap-[clamp(1rem,1.5vw,1.5rem)] overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
+
+              <ClientFeedbackCard
+                name="Dhenmark"
+                rate="5.0"
+                description="Joreson did a great job of communicating and also completing the task"
+              />
+              <ClientFeedbackCard
+                name="Von"
+                rate="5.0"
+                description="Joreson did a great job of communicating and also completing the task"
+              />
+              <ClientFeedbackCard
+                name="Lei"
+                rate="5.0"
+                description="Joreson did a great job of communicating and also completing the task"
+              />
+              <ClientFeedbackCard
+                name="Gem"
+                rate="5.0"
+                description="Joreson did a great job of communicating and also completing the task"
+              />
+              <ClientFeedbackCard
+                name="Ian"
+                rate="5.0"
+                description="Joreson did a great job of communicating and also completing the task"
+              />
+
+            </div>
+
           </div>
-          <p className='text-white'>Trusted by Clients</p>
-         </div>
-        {/* Right content column, pushed further right */}
-        <div className="ml-[clamp(1rem,6vw,8rem)] text-justify">
-           <div className="flex items-center">
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <div
-                    key={i}
-                    className="rounded-full bg-gray-500 border-2 border-black w-[clamp(1.5rem,3vw,2.5rem)] h-[clamp(1.5rem,3vw,2.5rem)]"
-                  />
-                ))}
-              </div>
-              <div className="bg-white rounded-full flex items-center justify-center ml-2 w-[clamp(1.5rem,3vw,2.5rem)] h-[clamp(1.5rem,3vw,2.5rem)]">
-                <span className="text-black text-[clamp(0.75rem,1.5vw,1.1rem)]">↗</span>
-              </div>
-            </div>
+        </div>
+        <Marquee className="text-4rem" text=" LET'S WORK TOGETHER" speed={20} />
 
-              {/* Text */}
-              <div className="text-white text-[clamp(0.6rem,1.1vw,2.8rem)] leading-snug mt-2 ">
-                <span className="font-semibold">99.6% of My Client are Satisfied</span>
-                <br />
-                -Be One Of Them Today.
-              </div>
-
-              {/* Buttons */}
-              <div className="flex items-center space-x-2 mt-3 text-[clamp(0.55rem,1vw,1.25rem)] z-22 ">
-                <button
-                  type="button"
-                  className="bg-white text-black rounded-full font-semibold px-[clamp(0.5rem,1.2vw,1.2rem)] py-[clamp(0.25rem,0.6vw,1.2rem)]"
-                >
-                  Free Consultation
-                </button>
-                <button
-                  type="button"
-                  className="border border-white/40 text-white rounded-full px-[clamp(0.5rem,1.2vw,1.2rem)] py-[clamp(0.25rem,0.6vw,1.2rem)]"
-                >
-                  24h Response
-                </button>
-              </div>
-
-            </div>
-                        
-             </div>
-
-         <div className="col-span-2 mt-6 flex items-center space-x-4 max-sm:justify-center">
-              
-            </div>
-         
-      
-
-          
         
+                        
+     
 
     </>
 
