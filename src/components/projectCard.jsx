@@ -4,7 +4,7 @@ function ProjectCard({ image, title, description, tag }) {
       <img
         src={image}
         alt={title}
-        className="w-full rounded-xl object-cover"
+        className=" rounded-xl object-cover w-[clamp(15rem,30vw,50rem)] h-[clamp(10rem,20vw,50rem)]"
       />
       <p className="text-white font-agdasima font-bold text-[clamp(1rem,1.8vw,1.5rem)] mt-4">
         {title}

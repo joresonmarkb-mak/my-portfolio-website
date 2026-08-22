@@ -8,9 +8,18 @@ body {
   font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 5rem;
+}
+
 @layer components {
   .button {
-    @apply  bg-[#0101F9] hover:bg-blue-700 text-white font-bold  py-1 px-4 rounded-full flex items-center space-x-2 ;
+    @apply  w-fit flex items-center gap-[clamp(0.35rem,1.5vw,0.75rem)] bg-blue-700 hover:bg-blue-500 transition-colors text-white font-semibold rounded-full 
+    pl-[clamp(0.85rem,3.5vw,1.5rem)] pr-[clamp(0.35rem,2vw,0.5rem)] py-[clamp(0.35rem,2vw,0.5rem)] text-[clamp(0.75rem,1.5vw,1rem)]
   }
   .emblem{
     @apply inline-block mt-3 text-[clamp(0.65rem,0.8vw,0.8rem)] text-white bg-blue-900/60 border border-blue-500/40 px-3 py-1 rounded-full m-2
